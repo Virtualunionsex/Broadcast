@@ -24,11 +24,11 @@ Bot = Client(
     bot_token=config.BOT_TOKEN,
     api_id=config.API_ID,
     api_hash=config.API_HASH,
-)
+) 
 
 @Bot.on_message(filters.private)
 async def _(bot, cmd):
-    await handle_user_status(bot, cmd)
+    await handle_user_status(bot, cmd), 
 ) 
 
 @Bot.on_message(filters.command("settings"))
