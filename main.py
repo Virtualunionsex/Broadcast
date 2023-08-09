@@ -29,6 +29,7 @@ Bot = Client(
 @Bot.on_message(filters.private)
 async def _(bot, cmd):
     await handle_user_status(bot, cmd)
+) 
 
 @Bot.on_message(filters.command("settings"))
 async def opensettings(bot, cmd):
