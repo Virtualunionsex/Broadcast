@@ -35,7 +35,7 @@ async def _(bot, cmd):
 async def opensettings(bot, cmd):
     user_id = cmd.from_user.id
     await cmd.reply_text(
-        f"`Here You Can Set Your Settings:`\n\nSuccessfully setted notifications to **{await db.get_notif(user_id)}**",
+        f"",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
